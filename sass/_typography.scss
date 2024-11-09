@@ -1,0 +1,90 @@
+@use "variables" as *;
+
+h1{
+    font-family: $font__heading;
+    color: $heading__colour;
+    font-size: $heading__size;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: focus-in-expand 2s;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+p{
+    font-family: $font__paragraph;
+    color: $paragraph__colour;
+    font-size: $paragraph__size;
+    letter-spacing: 1.3px;
+    align-items: center;
+    padding: 1vw;
+    margin: 0vw 15vw;
+    animation: text-focus-in 3s;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+
+//animations from https://animista.net/ - super cool resource
+
+.focus-in-expand {
+	animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes focus-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+              filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+              filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes focus-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+              filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+              filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+  .text-focus-in {
+	  animation: text-focus-in 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1.5s both;
+	  animation: text-focus-in 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1.5s both;
+}
+
+ @keyframes text-focus-in {
+    0% {
+              filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+              filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+              filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+              filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
